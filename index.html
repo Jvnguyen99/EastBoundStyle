@@ -1,0 +1,159 @@
+<!-- blog mini -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Eastbound Style</title>
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="assets/favicon.png">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="banner">
+				<img src="assets/banner.png" alt="banner" style="width: 100%; height: 100%">
+			</div>
+			<div id="navigation">
+				<hr>
+				<ul id="navItems">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="basklogin">
+				<button onclick="showUser()" class="userbtn"><img style="height:30px;" src="assets/user.png"></button>
+				<div id="showUserDrop" class="user-content">
+					<button class="btn" onclick="location.href='login.html'">Login</button>
+					<button class="btn" onclick="location.href='create.html'">Create</button>
+				</div>
+				<a href="bask_out.html"><img style="height:30px;" src="assets/basket.png"></a>
+			</div>
+			<div id="featured">
+				<div class="mySlides fade">
+					<img src="assets/slide1.jpg" style="width:100%">
+				</div>
+				<div class="mySlides fade">
+					<img src="assets/slide2.jpg" style="width:100%">
+				</div>
+				<div class="mySlides fade">
+					<img src="assets/slide3.jpg" style="width:100%">
+				</div>
+				<div id="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+			</div>
+			<div id="blogWrapper">
+				<h2 id="ebBlogh2">Eastbound Blog</h2>
+				<div id="recent">
+					<h3>Recent Additions</h3>
+					<div id="postSummary">
+						<table style="border-top:1px solid;">
+							<tr valign="top">
+								<td width="30%">
+									<img src="assets/4.jpg" style="width:100%">
+								</td>
+								<td>
+									<ul id="summary">
+										<li>
+											<h3>Nike X Ambush</h3>
+										</li>
+										<li>Now available.</li>
+										<li><a href="blogpage.html">Read here</a></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="upcoming">
+					<h3>Upcoming Releases</h3>
+					<div id="postSummary">
+						<table style="border-top:1px solid;">
+							<tr valign="top">
+								<td width="30%">
+									<img src="assets/sasquatch.jpg" style="width:100%">
+								</td>
+								<td>
+									<ul id="summary">
+										<li>
+											<h3>Sasquatchfabrix SS19</h3>
+										</li>
+										<li>More details soon.</li>
+										<li><a href="blogpage.html">Read here</a></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			/* this is the code of the footer */
+			<div id="footer">
+				<img src="assets/logo.png">
+				<h2 style="text-align: left;">Eastbound Style</h2>
+				<div id="footerLinks">
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="gallery.html">View our Gallery</a></li>
+						<li><a href="blog.html">Read our Blog</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				/* this is the code of the footer subscribe button */
+				<div id="footerSub">
+					<form id="subscribeButton">
+						Subscribe to our Newsletter<br>
+						<input type="text" name="subscribe" value="e-mail">
+						<input type="submit" id="subscribing" value="Submit" class='formbtn'>
+					</form>
+					/* this adds function to our subscribe button, letting users to subscribe to the website*/
+					<script type="text/javascript">
+						var form = document.getElementById("subscribeButton");
+						document.getElementById("subscribing").addEventListener("click",function () {
+
+						window.alert("Thank you for subscribing!");}
+						);
+					</script>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script>
+		/* This function toggles between hiding and showing the dropdown content when clicked on */
+		function showUser() {
+				document.getElementById("showUserDrop").classList.toggle("show");
+			}
+
+			function slideShow()
+			{
+		  		window.setInterval("changeImage()", 5000);
+			}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+</html>

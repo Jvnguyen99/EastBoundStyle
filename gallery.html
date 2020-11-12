@@ -1,0 +1,211 @@
+<!-- blog mini -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Gallery - Eastbound Style</title>
+		<link href="css/gallerystylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="assets/favicon.png">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="banner">
+				<img src="assets/banner.png" alt="banner" style="width: 100%; height: 100%">
+			</div>
+			<div id="navigation">
+				<hr>
+				<ul id="navItems">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="basklogin">
+				<button onclick="showUser()" class="userbtn"><img style="height:30px;" src="assets/user.png"></button>
+				<div id="showUserDrop" class="user-content">
+					<button class="btn" onclick="location.href='login.html'">Login</button>
+					<button class="btn" onclick="location.href='create.html'">Create</button>
+				</div>
+				<a href="bask_out.html"><img style="height:30px;" src="assets/basket.png"></a>
+			</div>
+		</div>
+		<div class="filter">
+			<button onclick="showFilter()" class="filterbtn">Filter</button>
+			<div id="showFilterDrop" class="filter-content">
+				<button class="btn active" onclick="filterFunction('all')"> Show all</button>
+				<button class="btn" onclick="filterFunction('hats')"> Hats</button>
+				<button class="btn" onclick="filterFunction('coats')"> Coats</button>
+				<button class="btn" onclick="filterFunction('bottoms')"> Bottoms</button>
+				<button class="btn" onclick="filterFunction('footWear')"> Footwear</button>
+			</div>
+		</div>
+		<div class='container'>
+			<div class='productDiv hats'>
+				<a href="product.html">
+				<img src='https://i.ebayimg.com/images/g/BSAAAOSwAWlaWNn7/s-l300.jpg' alt="adidas caps">
+				</a>
+				<h2 >ADIDAS SIX-PANEL CLASSIC 3-STRIPES CAP</h2>
+				<p class='colour'>Black</p>
+				<p class='price'>£15</p>
+			</div>
+			<div class='productDiv hats'>
+				<a href="product.html">
+				<img src='https://cdn.shopify.com/s/files/1/1362/8921/articles/balenciaga-dad-caps-unsurprisingly-rage-fashion-week-1-1200x800_300x300.jpg?v=1492900731'>
+				</a>
+				<h2 >Balenciaga - White Cap with Black logo </h2>
+				<p class='colour'>White</p>
+				<p class='price'>£265</p>
+			</div>
+			<div class='productDiv coats'>
+				<a href="product.html">
+				<img src='https://www.tvh.com/sites/default/files/styles/part_accessorie_overview/public/2018-02/RainClothes_300x220px.jpg?itok=r42VAQyR'>
+				</a>
+				<h2 >Product Name</h2>
+				<p class='colour'>Nullam .</p>
+				<p class='price'>£231</p>
+			</div>
+			<div class='productDiv bottoms'>
+				<a href="product.html">
+				<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvYer4PjOXvRYm_v2dPq1TIOxPj8R9m-iBn93MiUBmAZ2Sv4R3g'>
+				</a>
+				<h2 >Champion Joggers</h2>
+				<p class='colour'>Grey</p>
+				<p class='price'>£91</p>
+			</div>
+			<div class='productDiv footWear'>
+				<a href="product.html">
+				<img src='https://cdn.shopify.com/s/files/1/1848/6011/products/image_06c5d42e-bc4c-4f66-9dc0-4b5ee1fa72bb_300x300.jpg?v=1538249995'>
+				</a>
+				<h2 >Yeezy 350 Boost V2 e</h2>
+				<p class='colour'>Cream</p>
+				<p class='price'>£345</p>
+			</div>
+			<div class='productDiv hats'>
+				<a href="product.html">
+				<img src='https://i.ebayimg.com/images/g/BSAAAOSwAWlaWNn7/s-l300.jpg'>
+				</a>
+				<h2 >ADIDAS SIX-PANEL CLASSIC 3-STRIPES CAP</h2>
+				<p class='colour'>Black</p>
+				<p class='price'>£15</p>
+			</div>
+			<div class='productDiv hats'>
+				<a href="product.html">
+				<img src='https://cdn.shopify.com/s/files/1/1362/8921/articles/balenciaga-dad-caps-unsurprisingly-rage-fashion-week-1-1200x800_300x300.jpg?v=1492900731'>
+				</a>
+				<h2 >Balenciaga - White Cap with Black logo </h2>
+				<p class='colour'>White</p>
+				<p class='price'>£265</p>
+			</div>
+			<div class='productDiv coats'>
+				<a href="product.html">
+				<img src='https://www.tvh.com/sites/default/files/styles/part_accessorie_overview/public/2018-02/RainClothes_300x220px.jpg?itok=r42VAQyR'>
+				</a>
+				<h2 >Product Name</h2>
+				<p class='colour'>Nullam .</p>
+				<p class='price'>£231</p>
+			</div>
+			<div class='productDiv bottoms'>
+				<a href="product.html">
+				<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvYer4PjOXvRYm_v2dPq1TIOxPj8R9m-iBn93MiUBmAZ2Sv4R3g'>
+				</a>
+				<h2 >Champion Joggers</h2>
+				<p class='colour'>Grey</p>
+				<p class='price'>£91</p>
+			</div>
+			<div class='productDiv footWear'>
+				<a href="product.html">
+				<img src='https://cdn.shopify.com/s/files/1/1848/6011/products/image_06c5d42e-bc4c-4f66-9dc0-4b5ee1fa72bb_300x300.jpg?v=1538249995'>
+				</a>
+				<h2 >Yeezy 350 Boost V2 e</h2>
+				<p class='colour'>Cream</p>
+				<p class='price'>£345</p>
+			</div>
+		</div>
+		<div id="footer">
+			<img src="assets/logo.png">
+			<h2 style="text-align: left;">Eastbound Style</h2>
+			<div id="footerLinks">
+				<ul>
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="gallery.html">View our Gallery</a></li>
+					<li><a href="blog.html">Read our Blog</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div id="footerSub">
+				<form id="subscribeButton">
+					Subscribe to our Newsletter<br>
+					<input type="text" name="subscribe" value="e-mail">
+					<input type="submit" id="subscribing" value="Submit" class='formbtn'>
+				</form>
+				<script type="text/javascript">
+					var form = document.getElementById("subscribeButton");
+					document.getElementById("subscribing").addEventListener("click",function () {
+
+					window.alert("Thank you for subscribing!");}
+					);
+				</script>
+			</div>
+		</div>
+	</body>
+	<script>
+		/* This function toggles between hiding and showing the dropdown content when clicked on */
+		function showFilter() {
+		    document.getElementById("showFilterDrop").classList.toggle("show");
+		 }
+
+		/* This function toggles between hiding and showing the dropdown content when clicked on */
+		function showUser() {
+				document.getElementById("showUserDrop").classList.toggle("shows");
+			}
+
+
+		filterFunction("all")
+		function filterFunction(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("productDiv");
+		  if (c == "all") c = "";
+			/* Adds the "show" class (display:block) to the elements that were filtered,
+			and removes the "show" class from the elements that aren't selected*/
+		  for (i = 0; i < x.length; i++) {
+		    removeClass(x[i], "show");
+		    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+		  }
+		}
+
+		//showing the filtered elements
+		function addClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }
+		}
+		// Hiding elements that were not selected
+		function removeClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    while (arr1.indexOf(arr2[i]) > -1) {
+		      arr1.splice(arr1.indexOf(arr2[i]), 1);
+		    }
+		  }
+		  element.className = arr1.join(" ");
+		}
+
+			//Highlighting the current control button by adding the active class
+			var btnContainer = document.getElementById("showFilterDrop");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+			    var current = document.getElementsByClassName("active");
+			    current[0].className = current[0].className.replace(" active", "");
+			    this.className += " active";
+			  });
+			}
+
+	</script>
+</html>

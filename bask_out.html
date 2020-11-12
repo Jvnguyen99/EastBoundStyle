@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Eastbound Style</title>
+		<link href="css/basketstylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="assets/favicon.png">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="banner">
+				<img src="assets/banner.png" alt="banner" style="width: 100%; height: 100%">
+			</div>
+			<div id="navigation">
+				<hr>
+				<ul id="navItems">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="space">	</div>
+			<div class="basket">
+				<h2>Basket</h2>
+				<hr>
+				<div class="item">
+					<div class="buttons">
+						<span class="delete-btn"></span>
+					</div>
+					<div class="image">
+						<img src="assets/t-shirt.jpeg" alt="tee" width="100px" height="100px" />
+					</div>
+					<div class="description">
+						<span>Human Control System</span>
+						<span>Quantity: 1</span>
+						<span>Size: M</span>
+						<span>Black</span>
+					</div>
+					<div class="total-price">£115</div>
+				</div>
+				<br/>
+				<hr>
+				<div id="total">
+					<h4>SUBTOTAL:</h4>
+					<h4>DELIVERY:</h4>
+					<h4>TOTAL:</h4>
+				</div>
+				<div id="costs">
+					<h4>£115.00</h4>
+					<h4>£2.99</h4>
+					<h4>£117.99</h4>
+				</div>
+			</div>
+			<div class="delivery">
+				<h2>Delivery</h2>
+				<hr>
+				<label for="streetname"><b>Street Name</b></label>
+				<input type="text" id="delinfo" name="streetname" required>
+				<br/>
+				<label for="houseno"><b>House Number</b></label>
+				<input type="text" id="delinfo" name="houseno" required>
+				<br/>
+				<label for="postcode"><b>Post Code</b></label>
+				<input type="text" id="delinfo" name="postcode" required>
+				<h3>Delivery Method</h3>
+				<input type="radio"  name="deliverymethods" id="standarddelivery" checked>
+				<label for="standarddelivery"><b>Standard</b> (+£2.99) <br/> &nbsp; &nbsp; &nbsp; 2-3 business days</label> <br/>
+				<input type="radio"  name="deliverymethods" id="onedaydelivery">
+				<label for="onedaydelivery"><b>One Day</b> (+£4.99) <br/> &nbsp; &nbsp; &nbsp; Next business day</label> <br/>
+				<input type="radio"  name="deliverymethods" id="freedelivery">
+				<label for="freedelivery"><b>Free</b> <br/> &nbsp; &nbsp; &nbsp; 4-7 business days</label> <br/>
+				<br/>
+				<button type="submit" id="checkout" class="formbtn" onclick="location.href='payment.html'">Checkout As Guest</button> <br/>
+				<a href="login.html"><i>Or login and checkout</i></a>
+				<br/>
+				&nbsp;
+			</div>
+		</div>
+	</body>
+</html>

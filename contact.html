@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Contact Us - Eastbound Style</title>
+		<link href="css/contactstylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="assets/favicon.png">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="banner">
+				<img src="assets/banner.png" alt="banner" style="width: 100%; height: 100%">
+			</div>
+			<div id="navigation">
+				<hr>
+				<ul id="navItems">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="basklogin">
+				<button onclick="showUser()" class="userbtn"><img style="height:30px;" src="assets/user.png"></button>
+				<div id="showUserDrop" class="user-content">
+					<button class="btn" onclick="location.href='login.html'">Login</button>
+					<button class="btn" onclick="location.href='login.html'">Create </button>
+				</div>
+				<a href="bask_out.html"><img style="height:30px;" src="assets/basket.png"></a>
+			</div>
+			<div id="contactus">
+				<div id="contactText">
+					<h1>CONTACT US</h1>
+					<br/>
+					<h4>Our Customer Care Team is always here to help, our opening hours are
+						8am to 10pm (GMT) Monday-Friday and 10am to 7pm Saturday-Sunday.
+					</h4>
+					<br/> &nbsp;<br/>
+					<h3>E-MAIL: info@EASTBOUNDSTYLE.COM</h3>
+					<h3>TELEPHONE: +44 XXXXX XXXXX</h3>
+					<h3>POST: Eastbound Style<br/> PO Box 420<br/> London, UK </h3>
+					<br/><br/>
+					<h4>Feel free to contact us via any of the above methods. You can also
+						subscribe to our newsletter below.
+					</h4>
+				</div>
+				<div id="contactImg">
+					<img src="assets/twomodel.png" alt="featured image">
+				</div>
+			</div>
+			<div id="footer">
+				<img src="assets/logo.png">
+				<h2 style="text-align: left;">Eastbound Style</h2>
+				<div id="footerLinks">
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="gallery.html">View our Gallery</a></li>
+						<li><a href="blog.html">Read our Blog</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div id="footerSub">
+					<form action="/action_page.php">
+						Subscribe to our Newsletter<br>
+						<input type="text" name="subscribe" value="e-mail">
+						<input type="submit" value="Submit" class='formbtn'>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		/* This function toggles between hiding and showing the dropdown content when clicked on */
+		function showUser() {
+				document.getElementById("showUserDrop").classList.toggle("show");
+			}
+	</script>
+</html>

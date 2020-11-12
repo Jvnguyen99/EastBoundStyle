@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Blog - Eastbound Style</title>
+		<link href="css/blogstylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="assets/favicon.png">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="banner">
+				<img src="assets/banner.png" alt="banner" style="width: 100%; height: 100%">
+			</div>
+			<div id="navigation">
+				<hr>
+				<ul id="navItems">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="basklogin">
+				<button onclick="showUser()" class="userbtn"><img style="height:30px;" src="assets/user.png"></button>
+				<div id="showUserDrop" class="user-content">
+					<button class="btn" onclick="location.href='login.html'">Login</button>
+					<button class="btn" onclick="location.href='create.html'">Create</button>
+				</div>
+				<a href="bask_out.html"><img style="height:30px;" src="assets/basket.png"></a>
+			</div>
+			<br><br><br>
+			<div id="container">
+				<div id="blogWrapper">
+					<div class="tab">
+						<button class="tablinks" onclick="openBlog(event, 'Latest')">Latest</button>
+						<button class="tablinks" onclick="openBlog(event, 'Upcoming')">Upcoming</button>
+					</div>
+					<div id="Latest" class="tabcontent">
+						<div id="post">
+							<table width="100%">
+								<tr>
+									<td width="30%">
+										<img src="assets/6.jpg" style="width:100%">
+									</td>
+									<td>
+										<div id="summary">
+											<h2>Nike X Ambush</h2>
+											<p>
+												The highly anticipated Nike X Ambush collaboration has finally reached Eastbound Style!<br>Check out our gallery to find the products or read the full blog post for more information.
+												<br><br><a href="blogpage.html">Click here to read the full post</a>
+											</p>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div id="post">
+							<table width="100%">
+								<tr>
+									<td width="30%">
+										<img src="assets/t-shirt.jpeg" style="width:100%">
+									</td>
+									<td>
+										<div id="summary">
+											<h2>Undercover has Arrived</h2>
+											<p>
+												Undercover by Jun Takahashi is now available for purchase on our site.<br>Check out our gallery to find the products or read the full blog post for more information.
+												<br><br><a href="blogpage.html">Click here to read the full post</a>
+											</p>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div id="Upcoming" class="tabcontent">
+						<div id="post">
+							<table width="100%">
+								<tr>
+									<td width="30%">
+										<img src="assets/sasquatch.jpg" style="width:100%">
+									</td>
+									<td>
+										<div id="summary">
+											<h2>Sasquatchfabrix SS19</h2>
+											<p>
+												Sasquatchfabrix's Spring/Summer 2019 collection showcases a progressive blend of contemporary silhouettes elevated by traditional Japanese styling.
+												<br><br><a href="blogpage.html">Click here to read the full post</a>
+											</p>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<img src="assets/logo.png">
+				<h2 style="text-align: left;">Eastbound Style</h2>
+				<div id="footerLinks">
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="gallery.html">View our Gallery</a></li>
+						<li><a href="blog.html">Read our Blog</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div id="footerSub">
+					<form id="subscribeButton">
+						Subscribe to our Newsletter<br>
+						<input type="text" name="subscribe" value="e-mail">
+						<input type="submit" id="subscribing" value="Submit" class='formbtn'>
+					</form>
+					<script type="text/javascript">
+						var form = document.getElementById("subscribeButton");
+						document.getElementById("subscribing").addEventListener("click",function () {
+
+						window.alert("Thank you for subscribing!");}
+						);
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		/* This function toggles between hiding and showing the dropdown content when clicked on */
+		function showUser() {
+				document.getElementById("showUserDrop").classList.toggle("show");
+			}
+
+			function openBlog(evt, blogType) {
+			// Declare all variables
+			var i, tabcontent, tablinks;
+			// Get all elements with class="tabcontent" and hide them
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+			}
+			// Get all elements with class="tablinks" and remove the class "active"
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			// Show the current tab, and add an "active" class to the button that opened the tab
+			document.getElementById(blogType).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+</html>

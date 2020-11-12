@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Blog Post - Eastbound Style</title>
+		<link href="css/blogpagessheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="assets/favicon.png">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="banner">
+				<img src="assets/banner.png" alt="banner" style="width: 100%; height: 100%">
+			</div>
+			<div id="navigation">
+				<hr>
+				<ul id="navItems">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="basklogin">
+				<button onclick="showUser()" class="userbtn"><img style="height:30px;" src="assets/user.png"></button>
+				<div id="showUserDrop" class="user-content">
+					<button class="btn" onclick="location.href='login.html'">Login</button>
+					<button class="btn" onclick="location.href='create.html'">Create</button>
+				</div>
+				<a href="bask_out.html"><img style="height:30px;" src="assets/basket.png"></a>
+			</div>
+			<br><br>
+			<div id="blogpost">
+				<div id="blogTitle">
+					<h1>Nike x Ambush Collaboration</h1>
+				</div>
+				<div id="slideshowContainer">
+					<div id="postSlideShow">
+						<div class="mySlides fade">
+							<img src="assets/2.jpg">
+						</div>
+						<div class="mySlides fade">
+							<img src="assets/8.jpg">
+						</div>
+						<div class="mySlides fade">
+							<img src="assets/9.jpg">
+						</div>
+					</div>
+				</div>
+				<div id="dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+				<div id="blogDate">
+					<p>December 4, 2018</p>
+				</div>
+				<br>
+				<div id="blogContent">
+					<p>
+						After a number of teasers — including a first look at the sneakers and
+						a reversible fur jacket — Nike and AMBUSH have finally revealed their
+						full collection. Arguably the stand-out apparel piece, the faux fur
+						jacket features a huge Swoosh on the reverse. Other pieces in the apparel
+						capsule includes tracksuits, silver and gold metallic jackets, co-branded
+						T-shirts, Dry-Fit Stretch tights and fleece sweatpants.<br><br>
+						The sneaker — a mid-top boot version of the Air Max 180 — is inspired by
+						the archival Air Zoom Flight “The Glove” and is officially unveiled in
+						two different colorways. As well as the previously-teased white colorway,
+						the collaborative sneaker will also release in a black construction.
+						Take your best look yet at the collection in the gallery above, and
+						expect the collection to release at an event in Paris on December 3, with
+						the events in Tokyo and Shanghai to follow. The Air Max 180 sneaker is set
+						to release in Spring 2019.<br><br>
+						In other Nike news, check out the Epic React Flyknit “Multicolor.”
+					</p>
+				</div>
+			</div>
+			<div id="footer">
+				<img src="assets/logo.png">
+				<h2 style="text-align: left;">Eastbound Style</h2>
+				<div id="footerLinks">
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="gallery.html">View our Gallery</a></li>
+						<li><a href="blog.html">Read our Blog</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div id="footerSub">
+					<form id="subscribeButton">
+						Subscribe to our Newsletter<br>
+						<input type="text" name="subscribe" value="e-mail">
+						<input type="submit" id="subscribing" value="Submit" class='formbtn'>
+					</form>
+					<script type="text/javascript">
+						var form = document.getElementById("subscribeButton");
+						document.getElementById("subscribing").addEventListener("click",function () {
+
+						window.alert("Thank you for subscribing!");}
+						);
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		/* This function toggles between hiding and showing the dropdown content when clicked on */
+			function showUser() {
+			document.getElementById("showUserDrop").classList.toggle("show");
+		}
+
+		 var slideIndex = 1;
+		 showSlides(slideIndex);
+
+		 function currentSlide(n) {
+		   showSlides(slideIndex = n);
+		 }
+
+		 function showSlides(n) {
+		   var i;
+		   var slides = document.getElementsByClassName("mySlides");
+		   var dots = document.getElementsByClassName("dot");
+		   if (n > slides.length) {slideIndex = 1}
+		   if (n < 1) {slideIndex = slides.length}
+		   for (i = 0; i < slides.length; i++) {
+		       slides[i].style.display = "none";
+		   }
+		   for (i = 0; i < dots.length; i++) {
+		       dots[i].className = dots[i].className.replace(" active", "");
+		   }
+		   slides[slideIndex-1].style.display = "block";
+		   dots[slideIndex-1].className += " active";
+		 }
+	</script>
+</html>
