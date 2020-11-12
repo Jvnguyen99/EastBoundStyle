@@ -1,0 +1,351 @@
+html,
+body,
+blockquote,
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+	margin: 0;
+	padding: 0
+}
+
+* {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+p {
+	text-align: left;
+	font-size: 16pt;
+}
+
+#wrapper {
+	margin: auto;
+	height: auto;
+	width: 1000px;
+	text-align: center;
+}
+
+#banner {
+	width: auto;
+	height: auto;
+}
+
+
+#postSummary {
+	text-align: left;
+}
+
+#footer {
+	position: relative;
+	bottom 0;
+	text-align: left;
+}
+
+#navigation {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#navItems a {
+	text-decoration: none;
+}
+
+a:link {
+	color: black;
+}
+
+a:hover {
+	background-color: silver;
+}
+
+a:visited {
+	color: black;
+}
+
+a:active {
+	color: #3d3d3d;
+}
+
+#navItems li {
+	display: inline;
+	border-right: 1px solid;
+	padding-right: 4px;
+}
+
+#navItems li:last-child {
+	border-right: none;
+}
+
+.userbtn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	display: inline;
+}
+
+.userbtn:hover {
+	background-color: #ddd;
+}
+
+.user-content {
+	display: none;
+	position: absolute;
+	min-width: 230px;
+	overflow: auto;
+	border: none;
+}
+
+.user-content button {
+	background-color: #ddd;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border: none;
+}
+
+.user button:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+.productimg {
+	padding-top: 40px;
+	float: left;
+	width: 45%;
+}
+
+.productinfo {
+	padding-top: 20px;
+	float: right;
+	width: 50%;
+	text-align: left;
+}
+
+.productinfo h2,
+h4 {
+	font-weight: lighter;
+	padding-bottom: 0px;
+	line-height: 1;
+}
+
+.productinfo li {
+	line-height: 1;
+}
+
+.addto {
+	background-color: white;
+	color: black;
+	font-family: inherit;
+	font-size: 20px;
+	height: 50px;
+	width: 150px;
+	border: 1px dashed;
+}
+
+.sizes {
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+	font-family: inherit;
+	display: block;
+}
+
+.basket {
+	float: left;
+	width: 40%;
+	border: 1px solid;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10);
+}
+
+.item {
+	padding: 20px 30px;
+	height: 120px;
+	display: flex;
+}
+
+.buttons {
+	position: relative;
+	padding-top: 5px;
+	margin-right: 5px;
+}
+
+.delete-btn {
+	display: inline-block;
+	Cursor: pointer;
+}
+
+.delete-btn {
+	width: 12px;
+	height: 12px;
+	background: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Ic_close_48px.svg") no-repeat center;
+}
+
+.is-active {
+	animation-name: animate;
+	animation-duration: .8s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(28);
+	animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+	0% {
+		background-position: left;
+	}
+	50% {
+		background-position: right;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+.image {
+	margin-right: 50px;
+}
+
+.description {
+	padding-top: 10px;
+	margin-right: 60px;
+	width: 115px;
+}
+
+.description span {
+	display: block;
+	font-size: 14px;
+	color: #43484D;
+	font-weight: 400;
+}
+
+.description span:first-child {
+	margin-bottom: 5px;
+}
+
+.description span:last-child {
+	font-weight: 300;
+	margin-top: 8px;
+	color: #86939E;
+}
+
+.total-price {
+	width: 83px;
+	padding-top: 27px;
+	text-align: center;
+	font-size: 16px;
+	color: #43484D;
+	font-weight: 300;
+}
+
+@media (max-width: 800px) {
+	.shopping-cart {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.item {
+		height: auto;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.image img {
+		width: 50%;
+	}
+	.image,
+	.description {
+		width: 100%;
+		text-align: center;
+		margin: 6px 0;
+	}
+	.buttons {
+		margin-right: 20px;
+	}
+}
+
+#total {
+	text-align: left;
+	line-height: 1;
+	float: left;
+}
+
+#costs {
+	text-align: right;
+	line-height: 1;
+	float: right;
+}
+
+.delivery {
+	float: right;
+	width: 40%;
+	border: 1px solid;
+	text-align: left;
+	margin-left: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10);
+}
+
+.delivery a {
+	color: black;
+}
+
+.space {
+	padding-top: 40px;
+}
+
+input[type=text]{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #ddd;
+}
+
+#expiry {
+	width: 7%;
+}
+
+#cvv {
+	width: 5%;
+}
+
+#delinfo {
+	width: 93%;
+}
+
+input[type=text]:focus {
+	background-color: #bbb;
+	outline: none;
+}
+
+.formbtn {
+	background-color: #666;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 160px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	opacity: 0.9;
+}
+
+.formbtn:hover {
+	opacity: 1;
+}
+
+#checkout {
+	margin: 10px 0px;
+}

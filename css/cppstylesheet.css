@@ -1,0 +1,399 @@
+* {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+p {
+	font-size: 16pt;
+}
+
+#navItems a {
+	text-decoration: none;
+}
+
+a:link {
+	color: black;
+}
+
+a:hover {
+	background-color: silver;
+}
+
+a:visited {
+	color: black;
+}
+
+a:active {
+	color: #3d3d3d;
+}
+
+#wrapper {
+	margin: auto;
+	height: auto;
+	width: 1000px;
+	text-align: center;
+}
+
+#banner {
+	width: auto;
+	height: auto;
+}
+
+#basklogin {
+	display: inline;
+	width: auto;
+	float: right;
+}
+
+#basklogin a {
+	text-decoration: none;
+}
+
+#blogWrapper {
+	margin-bottom: 10px;
+	height: auto;
+}
+
+#ebBlogh2 {
+	margin-bottom: 10px;
+}
+
+#recent {
+	display: inline-block;
+	width: 49%;
+}
+
+#upcoming {
+	display: inline-block;
+	width: 49%;
+}
+
+#postSummary {
+	text-align: left;
+}
+
+#footer {
+	font-size: 14pt;
+	border-top: 1px solid;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	height: 150px;
+}
+
+#footer ul {
+	text-align: left;
+	list-style-type: none;
+	padding: 0;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footerLinks {
+	float: left;
+}
+
+#footerSub {
+	margin-top: 15px;
+}
+
+#footer img {
+	float: right;
+	max-height: 150px;
+}
+
+#navigation {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#navItems li {
+	display: inline;
+	border-right: 1px solid;
+	padding-right: 4px;
+}
+
+#navItems li:last-child {
+	border-right: none;
+}
+
+#basklogin {
+	display: inline;
+	width: auto;
+	float: right;
+}
+
+#basklogin a {
+	text-decoration: none;
+}
+
+.dropdown {
+	overflow: hidden;
+	display: inline;
+	position: static;
+}
+
+.dropdown .dropbutton {
+	border: none;
+	outline: none;
+	color: black;
+	background-color: white;
+	margin: 0;
+	padding: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+
+/**.navigation a:hover, .dropdown:hover .dropbutton, .dropbutton:focus {
+	background-color: silver;
+}
+ **/
+
+.blogoptions {
+	display: none;
+	background-color: white;
+	z-index: 1;
+}
+
+.blogoptions a {
+	color: black;
+	border-right: none;
+	text-decoration: none;
+	display: block;
+	max-width: 100px;
+	text-align: left;
+}
+
+.blogoptions a:hover {
+	background-color: silver;
+}
+
+.dropdown:hover .blogoptions {
+	display: block;
+}
+
+.productimg {
+	padding-top: 40px;
+	float: left;
+	width: 45%;
+}
+
+.productinfo {
+	padding-top: 20px;
+	float: right;
+	width: 50%;
+	text-align: left;
+}
+
+.productinfo h2,
+h4 {
+	font-weight: lighter;
+	padding-bottom: 0px;
+	line-height: 1;
+}
+
+.productinfo li {
+	line-height: 1;
+}
+
+.addto {
+	background-color: white;
+	color: black;
+	font-family: inherit;
+	font-size: 20px;
+	height: 50px;
+	width: 150px;
+	border: 1px dashed;
+}
+
+.sizes {
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+	font-family: inherit;
+	display: block;
+}
+
+.basket {
+	float: left;
+	width: 45%;
+	border: 1px solid;
+}
+
+.delivery {
+	float: right;
+	width: 45%;
+	border: 1px solid;
+	text-align: left;
+	margin-left: 10px;
+}
+
+.space {
+	padding-top: 40px;
+}
+
+#login {
+	margin: auto;
+}
+
+#login table input[type=text] {
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+#loginbutton {
+	background-color: white;
+	color: black;
+	font-family: inherit;
+	font-size: 20px;
+	height: 50px;
+	width: 150px;
+	border: 1px solid;
+}
+
+#contactImg {
+	float: right;
+	width: 45%;
+	padding-top: 10px;
+}
+
+#contactText {
+	float: left;
+	width: 50%;
+	padding-top: 20px;
+}
+
+#contactText h1,
+h3,
+h4 {
+	font-weight: lighter;
+}
+
+#footer {
+	font-size: 14pt;
+	border-top: 1px solid;
+	padding-top: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	height: 150px;
+}
+
+#footer ul {
+	text-align: left;
+	list-style-type: none;
+	padding: 0;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footerLinks {
+	float: left;
+}
+
+#footerSub {
+	margin-top: 15px;
+}
+
+#footer img {
+	float: right;
+	max-height: 150px;
+}
+
+.userbtn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	display: inline;
+}
+
+.userbtn:hover {
+	background-color: #ddd;
+}
+
+.user-content {
+	display: none;
+	position: absolute;
+	min-width: 230px;
+	overflow: auto;
+	border: none;
+}
+
+.user-content button {
+	background-color: #ddd;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border: none;
+}
+
+.user button:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+	background-color: #bbb;
+	outline: none;
+}
+
+
+/* Set a style for the submit button */
+
+.formbtn {
+	background-color: #666;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 160px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	opacity: 0.9;
+}
+
+.formbtn:hover {
+	opacity: 1;
+}
+
+.payment {
+	margin: auto;
+	width: 640px;
+	text-align: left;
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #ddd;
+}
+
+#expiry {
+	width: 7.5%;
+}
+
+#cvv {
+	width: 5%;
+}
+
+#delinfo {
+	width: 93%;
+}

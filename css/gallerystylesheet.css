@@ -1,0 +1,320 @@
+html,
+body,
+blockquote,
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+	margin: 0;
+	padding: 0
+}
+
+* {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+p {
+	text-align: left;
+	font-size: 16pt;
+}
+
+#navItems a {
+	text-decoration: none;
+}
+
+# a:link {
+	color: black;
+}
+
+a:hover {
+	background-color: silver;
+}
+
+a:visited {
+	color: black;
+}
+
+a:active {
+	color: 3d3d3d;
+}
+
+#wrapper {
+	margin: auto;
+	height: 100%;
+	width: 1000px;
+	text-align: center;
+}
+
+#banner {
+	width: auto;
+	height: auto;
+}
+
+#navigation {
+	width: auto;
+	height: auto;
+}
+
+#navItems li {
+	display: inline;
+	border-right: 1px solid;
+	padding-right: 4px;
+}
+
+#navItems li:last-child {
+	border-right: none;
+}
+
+#basklogin {
+	display: inline;
+	width: auto;
+	float: right;
+}
+
+#basklogin a {
+	text-decoration: none;
+}
+
+#blogWrapper {
+	text-align: center;
+}
+
+#footer {
+	margin: auto;
+	width: 1000px;
+	font-size: 14pt;
+	border-top: 1px solid;
+	padding-top: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	height: 150px;
+}
+
+#footer ul {
+	text-align: left;
+	list-style-type: none;
+	padding: 0;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footerLinks {
+	float: left;
+}
+
+#footerSub {
+	margin-top: 15px;
+}
+
+#footer img {
+	float: right;
+	max-height: 150px;
+}
+
+.userbtn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	display: inline;
+}
+
+.userbtn:hover {
+	background-color: #ddd;
+}
+
+.user-content {
+	display: none;
+	position: absolute;
+	min-width: 230px;
+	overflow: auto;
+	border: none;
+}
+
+.user-content button {
+	background-color: #ddd;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border: none;
+}
+
+.user button:hover {
+	background-color: #ddd;
+}
+
+.container {
+	padding: 20px;
+	padding-top: 30px;
+	text-align: center;
+	display: inline-block;
+}
+
+.container .productDiv {
+	position: relative;
+	overflow: hidden;
+	width: 250px;
+	height: 340px;
+	border-radius: 4px;
+	margin: 50px;
+	padding: 13px;
+	display: none;
+}
+
+.container img {
+	position: relative;
+	top: -15px;
+	left: -15px;
+	transition: all .2s ease;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.container img:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.container h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.container .colour {
+	text-align: left;
+	font-size: 11px;
+	max-height: 23px;
+	overflow: hidden;
+}
+
+.container .price {
+	text-align: left;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.filterbtn {
+	background-color: black;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.filterbtn:hover {
+	background-color: #ddd;
+}
+
+.filter {
+	position: relative;
+	float: left;
+}
+
+.filter-content {
+	display: none;
+	position: absolute;
+	min-width: 230px;
+	overflow: auto;
+	border: none;
+}
+
+.filter-content button {
+	background-color: transparent;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border: none;
+}
+
+.filter button:hover {
+	background-color: #ddd;
+}
+
+.btn.active {
+	background-color: #666;
+	color: white;
+}
+
+.show {
+	display: inline-block !important;
+}
+
+.shows {
+	display: block;
+}
+
+.login,
+.forgot,
+.create {
+	margin: auto;
+	width: 640px;
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #ddd;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+	background-color: #bbb;
+	outline: none;
+}
+
+#footerSub input[type=text] {
+	width: 35%;
+	padding: 10px;
+	margin: 0;
+	display: inline-block;
+	border: none;
+	background: #ddd;
+}
+
+
+/* Set a style for the submit button */
+
+.formbtn {
+	background-color: #666;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 160px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	opacity: 0.9;
+}
+
+.formbtn:hover {
+	opacity: 1;
+}
+
+#footerSub .formbtn {
+	background-color: #666;
+	color: white;
+	margin: 0;
+	padding: 10px;
+	border: none;
+	width: auto;
+	opacity: 0.9;
+}

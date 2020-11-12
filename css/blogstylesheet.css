@@ -1,0 +1,241 @@
+html,
+body,
+blockquote,
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+	margin: 0;
+	padding: 0
+}
+
+* {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+p {
+	text-align: left;
+	font-size: 16pt;
+}
+
+#navItems a {
+	text-decoration: none;
+}
+
+a:link {
+	color: black;
+}
+
+a:hover {
+	background-color: silver;
+}
+
+a:visited {
+	color: black;
+}
+
+a:active {
+	color: #3d3d3d;
+}
+
+#banner {
+	width: auto;
+	height: auto;
+}
+
+#navigation {
+	width: auto;
+	height: auto;
+}
+
+#navItems li {
+	display: inline;
+	border-right: 1px solid;
+	padding-right: 4px;
+}
+
+#navItems li:last-child {
+	border-right: none;
+}
+
+#basklogin {
+	display: inline;
+	width: auto;
+	float: right;
+}
+
+#basklogin a {
+	text-decoration: none;
+}
+
+#wrapper {
+	margin: auto;
+	height: auto;
+	width: 1000px;
+	text-align: center;
+}
+
+#blogWrapper {
+	border: 1px solid #000;
+}
+
+.tab {
+	overflow: hidden;
+	background-color: #ccc;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+	background-color: #ccc;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+	background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+	background-color: #f1f1f1;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+	overflow: auto;
+	text-align: left;
+	height: 500px;
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-top: none;
+}
+
+#post {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	max-height: 300px;
+	margin-bottom: 10px;
+}
+
+#summary {
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+}
+
+.selectedTab {
+	border-top: solid;
+	border-left: solid;
+	border-right: solid;
+	border-width: thin;
+}
+
+#footer {
+	font-size: 14pt;
+	border-top: 1px solid;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	height: 150px;
+}
+
+#footer ul {
+	text-align: left;
+	list-style-type: none;
+	padding: 0;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footerLinks {
+	float: left;
+}
+
+#footerSub {
+	margin-top: 15px;
+}
+
+#footer img {
+	float: right;
+	max-height: 150px;
+}
+
+.userbtn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	display: inline;
+}
+
+.userbtn:hover {
+	background-color: #ddd;
+}
+
+.user-content {
+	display: none;
+	position: absolute;
+	min-width: 230px;
+	overflow: auto;
+	border: none;
+}
+
+.user-content button {
+	background-color: #ddd;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border: none;
+}
+
+.user button:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+#footerSub input[type=text] {
+	width: 35%;
+	padding: 10px;
+	margin: 0;
+	display: inline-block;
+	border: none;
+	background: #ddd;
+}
+
+#footerSub .formbtn {
+	background-color: #666;
+	color: white;
+	margin: 0;
+	padding: 10px;
+	border: none;
+	width: auto;
+	opacity: 0.9;
+}
